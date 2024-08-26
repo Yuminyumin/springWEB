@@ -1,4 +1,4 @@
-package mvc.ctrl;
+package mvc.user.ctrl;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -6,16 +6,14 @@ import javax.servlet.http.HttpServletResponse;
 import mvc.util.Controller;
 import mvc.util.View;
 
-public class IndexController implements Controller{
+public class JoinController implements Controller{
 
 	@Override
 	public View execute(HttpServletRequest request, HttpServletResponse response) {
-		System.out.println("debug >>> IndexController execute");
-		
-		// 컨트롤러의 기능 구현
+		System.out.println("debug >>> JoinController execute");
 		
 		View view = new View();
-		view.setResponseJsp("main.jsp");
+		view.setResponseJsp("joinForm.jsp");
 		view.setFlag(true);
 		return view;
 	}
