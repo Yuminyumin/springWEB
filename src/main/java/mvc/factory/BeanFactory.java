@@ -5,6 +5,7 @@ import java.util.Map;
 
 import mvc.ctrl.IndexController;
 import mvc.user.ctrl.JoinController;
+import mvc.user.ctrl.ListController;
 import mvc.user.ctrl.LoginController;
 import mvc.user.ctrl.LogoutController;
 import mvc.util.Controller;
@@ -24,6 +25,7 @@ public class BeanFactory {
 		map.put("/springWEB/login.kdt", new LoginController());
 		map.put("/springWEB/join.kdt", new JoinController());
 		map.put("/springWEB/logout.kdt", new LogoutController());
+		map.put("/springWEB/list.kdt", new ListController());
 	}
 	
 	public static BeanFactory getInstance() {

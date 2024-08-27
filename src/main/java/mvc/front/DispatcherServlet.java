@@ -38,5 +38,5 @@ public class DispatcherServlet extends HttpServlet{
 		} else {
 			response.sendRedirect(view.getResponseJsp());
 		}
-	}
+	}  
 }

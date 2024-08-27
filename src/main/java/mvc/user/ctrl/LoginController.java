@@ -41,6 +41,8 @@ public class LoginController implements Controller{
 			HttpSession session = request.getSession();
 			session.setAttribute("loginUser", responseUser);
 			
+			//request.setAttribute("loginUser", responseUser);
+			
 			view.setFlag(true);
 			view.setResponseJsp("./main.jsp");
 		} else {
